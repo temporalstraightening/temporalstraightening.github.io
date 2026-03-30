@@ -81,21 +81,70 @@
     <div class="container is-max-desktop">
       <div class="hero-body has-text-centered">
         <h3 class="title is-4" style="text-align: left;">S3: Long-Horizon Planning</h3>
-        <figure>
-          <img src="static/images/umaze_heatmap.png" alt="Distance heatmaps" style="max-width: 100%; display: block; margin: 0 auto;">
-          <figcaption>Fig 4. Distance heatmaps: spatial features and pooled features capture different levels of distance information</figcaption>
-        </figure>
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            <figure>
+              <img src="static/images/umaze_heatmap_patch.png" alt="Umaze Heatmap Patch" style="max-width: 100%; display: block; margin: 0 auto;">
+              <figcaption>Umaze Patch</figcaption>
+            </figure>
+          </div>
+          <div class="column is-half has-text-centered">
+            <figure>
+              <img src="static/images/umaze_heatmap_pool.png" alt="Umaze Heatmap Pool" style="max-width: 100%; display: block; margin: 0 auto;">
+              <figcaption>Umaze Pooled</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            <figure>
+              <img src="static/images/medium_heatmap_patch.png" alt="Medium Heatmap Patch" style="max-width: 100%; display: block; margin: 0 auto;">
+              <figcaption>PointMaze-Medium Patch</figcaption>
+            </figure>
+          </div>
+          <div class="column is-half has-text-centered">
+            <figure>
+              <img src="static/images/medium_heatmap_pool.png" alt="Medium Heatmap Pool" style="max-width: 100%; display: block; margin: 0 auto;">
+              <figcaption>PointMaze-Medium Pooled</figcaption>
+            </figure>
+          </div>
+        </div>
+        <figcaption>Fig 4. Distance Heatmaps after Straightening: Patch and pooled features capture different levels of distance information</figcaption>
+        <figcaption>Blue indicates small distances, red indicates large distances.</figcaption>
       </div>
     </div>
   </section>
 
   <section class="hero is-small">
     <div class="container is-max-desktop">
-      <div class="hero-body has-text-centered">
-        <video autoplay controls muted playsinline style="width: 50%; border-radius: 8px;">
-          <source src="static/images/long.mp4" type="video/mp4">
-        </video>
-        <figcaption>Umaze: Use the pooled feature distances as planning cost for long-horizon planning</figcaption>
+      <div class="hero-body">
+        <div class="columns is-centered">
+          <div class="column is-one-quarter has-text-centered">
+            <video autoplay controls muted playsinline style="width: 100%; border-radius: 8px;">
+              <source src="static/videos/umaze_long.mp4" type="video/mp4">
+            </video>
+            <figcaption>Umaze</figcaption>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <video autoplay controls muted playsinline style="width: 100%; border-radius: 8px;">
+              <source src="static/videos/medium_long.mp4" type="video/mp4">
+            </video>
+            <figcaption>Medium1</figcaption>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <video autoplay controls muted playsinline style="width: 100%; border-radius: 8px;">
+              <source src="static/videos/medium_long2.mp4" type="video/mp4">
+            </video>
+            <figcaption>Medium2</figcaption>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <video autoplay controls muted playsinline style="width: 100%; border-radius: 8px;">
+              <source src="static/videos/medium_long3.mp4" type="video/mp4">
+            </video>
+            <figcaption>Medium3</figcaption>
+          </div>
+        </div>
+        <figcaption> Use the pooled feature distances as planning cost for long-horizon planning </figcaption>
       </div>
     </div>
   </section>
